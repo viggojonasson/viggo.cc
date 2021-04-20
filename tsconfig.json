@@ -16,8 +16,8 @@
     "baseUrl": ".",
     "importsNotUsedAsValues": "preserve",
     "paths": {
-      "~/*": ["./*"],
-      "@/*": ["./*"]
+      "~/*": ["./src/*"],
+      "@/*": ["./src/*"]
     },
     "types": [
       "@types/node",

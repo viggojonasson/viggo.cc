@@ -1,24 +1,25 @@
 {
-  "name": "nuxt-community-typescript-template",
-  "description": "A boilerplate to start a Nuxt+TS project quickly",
-  "version": "2.15.4",
-  "private": true,
-  "dependencies": {
-    "@nuxtjs/composition-api": "0.23.1",
-    "nuxt-property-decorator": "2.9.1",
-    "nuxt": "2.15.4"
-  },
-  "scripts": {
-    "dev": "nuxt",
-    "build": "nuxt build",
-    "start": "nuxt start",
-    "generate": "nuxt generate",
-    "lint": "eslint --max-warnings 0 --ext .ts,.vue ."
-  },
-  "devDependencies": {
-    "@nuxt/types": "2.15.4",
-    "@nuxt/typescript-build": "2.1.0",
-    "@nuxtjs/eslint-config-typescript": "6.0.0",
-    "eslint": "7.24.0"
-  }
+    "name": "viggo.cc",
+    "description": "Frontend for viggo.cc",
+    "version": "0.0.9",
+    "private": true,
+    "dependencies": {
+        "@nuxtjs/composition-api": "0.23.1",
+        "nuxt": "2.15.4",
+        "nuxt-property-decorator": "2.9.1",
+        "vue-scrollto": "^2.20.0"
+    },
+    "scripts": {
+        "dev": "nuxt",
+        "build": "nuxt build",
+        "start": "nuxt start",
+        "generate": "nuxt generate",
+        "lint": "eslint --max-warnings 0 --ext .ts,.vue ."
+    },
+    "devDependencies": {
+        "@nuxt/types": "^2.15.4",
+        "@nuxt/typescript-build": "2.1.0",
+        "@nuxtjs/tailwindcss": "^4.0.3",
+        "postcss": "^8.2.10"
+    }
 }
