@@ -3,12 +3,12 @@
         <Navbar />
         <div class="mid">
             <div
-                class="bg-white rounded-md shadow-2xl p-8 px-16 border-double border-4 border-blue-300"
+                class="bg-white rounded-md shadow-2xl p-2 md:p-8 px-8 md:px-16 border-double border-4 border-blue-300"
             >
                 <h1 class="font-extrabold text-5xl text-center">hello</h1>
-                <a href="/">
+                <div class="hidden sm:block">
                     <p class="font-semibold text-3xl" v-if="!iframe.loaded">
-                        Plis Wait We Load!
+                        Loading...
                     </p>
                     <iframe
                         :src="iframe.src"
@@ -17,7 +17,12 @@
                         v-show="iframe.loaded"
                         width="470"
                     ></iframe>
-                </a>
+                </div>
+                <div class="block sm:hidden">
+                    <p class="font-semibold text-lg">
+                        Get a bigger phone to see this!
+                    </p>
+                </div>
                 <div class="text-center">
                     <button
                         v-scroll-to="{
@@ -58,7 +63,6 @@
                 </div>
             </div>
         </div>
-        <Footer />
     </div>
 </template>
 
@@ -75,7 +79,7 @@ body {
 }
 
 .projects {
-    height: calc(100vh);
+    height: 80vh;
     display: grid;
     place-items: center;
 }
@@ -90,15 +94,14 @@ body {
 
 <script lang="ts">
 import Vue from 'vue';
+
 import Navbar from '@/components/Navbar.vue';
 import Project from '@/components/Project.vue';
-import Footer from '@/components/Footer.vue';
 
 export default Vue.extend({
     components: {
         Navbar,
-        Project,
-        Footer
+        Project
     },
     data() {
         return {
@@ -112,7 +115,7 @@ export default Vue.extend({
                     title: {
                         name: 'Arcade.tf',
                         url: 'https://arcade.tf',
-                        description: 'Sole Developer'
+                        description: 'Lead Developer'
                     },
                     description: `Arcade.tf is an automated TF2 trading site
                                     that aims to provide competitive prices and
@@ -123,7 +126,7 @@ export default Vue.extend({
                     title: {
                         name: 'Snapshots.tf',
                         url: 'https://snapshots.tf',
-                        description: 'Sole Developer'
+                        description: 'Lead Developer'
                     },
                     description: `Snapshots.tf is a backpack.tf snapshotting service free of charge (currently in maintenance).`,
                     img:

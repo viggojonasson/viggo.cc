@@ -1,15 +1,18 @@
 <template>
     <header
-        class="mt-2 w-full shadow-xl bg-white dark:bg-gray-700 items-center h-16 rounded-2xl z-40"
+        class="mt-4 w-full shadow-xl bg-white dark:bg-gray-700 items-center h-16 rounded-2xl z-40"
     >
         <div
-            class="relative z-20 flex flex-col justify-center h-full px-3 mx-auto flex-center"
+            class="z-20 flex flex-col justify-center h-full px-3 mx-auto flex-center"
         >
             <div
-                class="relative items-center pl-1 flex w-full lg:max-w-68 sm:pr-2 sm:ml-0"
+                class="items-center pl-1 flex w-full lg:max-w-68 sm:pr-2 sm:ml-0"
             >
-                <div class="relative left-0 z-50 flex w-3/4 h-auto h-full">
-                    <NuxtLink to="/" class="font-bold">
+                <div>
+                    <NuxtLink
+                        to="/"
+                        class="font-bold text-blue-400 hover:text-blue-500"
+                    >
                         viggo.cc
                     </NuxtLink>
                 </div>
@@ -20,6 +23,14 @@
         </div>
     </header>
 </template>
+
+<style>
+header {
+    max-width: 1248px;
+    margin-left: auto;
+    margin-right: auto;
+}
+</style>
 
 <script lang="ts">
 import Vue from 'vue';

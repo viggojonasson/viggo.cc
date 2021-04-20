@@ -36,13 +36,13 @@
 }
 
 .project {
-    width: 300px;
+    width: min(300px, 100%);
     margin: 1rem;
 }
 
 .project-image img {
-    height: 300px;
-    width: 300px;
+    height: min(300px, 100%);
+    width: min(300px, 100%);
     background-size: contain;
 }
 
