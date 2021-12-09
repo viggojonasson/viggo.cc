@@ -20,7 +20,7 @@
                 </div>
                 <div class="block sm:hidden">
                     <p class="font-semibold text-lg">
-                        Get a bigger phone to see this!
+                        To small screen.
                     </p>
                 </div>
                 <div class="text-center">
