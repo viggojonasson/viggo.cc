@@ -16,6 +16,11 @@
                         viggo.cc
                     </NuxtLink>
                 </div>
+                <div class="mx-auto text-center">
+                    <a href="https://github.com/viggojonasson" class="hover:text-blue-500">
+                        github
+                    </a>
+                </div>
                 <div class="ml-auto mr-0 text-right">
                     <p class="font-mono">aethez#6403</p>
                 </div>
